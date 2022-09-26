@@ -1,0 +1,984 @@
+<!doctype html>
+<html lang="en">
+
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/19d4105916.js" crossorigin="anonymous"></script>
+
+
+
+    <title>SWEET SHOP</title>
+</head>
+<style>
+    .jumbotron {
+        background-image: url("cofe.jpg");
+
+
+    }
+
+    .navbar {
+        background-color: rgb(35 209 232);
+        /* text-transform: uppercase;
+            font-size: 16px;
+            font-weight: 600; */
+        padding: 0 !important;
+    }
+
+    #nav-bar {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+
+    .navbar-nav li {
+        padding: 0 10px;
+
+    }
+
+    .navbar-nav li a {
+        color: #fff !important;
+        font-weight: 600;
+        text-transform: uppercase;
+        transition: 0.5s;
+
+    }
+
+    .navbar-nav li a:hover {
+        background-color: rgb(255, 138, 187);
+        transform: translateY(-10px);
+    }
+
+
+    /* h2 {
+        color: rgb(5, 205, 255);
+        text-align: center;
+        text-transform: uppercase;
+    } */
+
+
+
+
+
+
+    .card-text {
+        text-align: center;
+        color: rgb(170, 0, 57);
+    }
+
+    .col-md-4 {
+        transition: 0.5s;
+
+    }
+
+    .col-md-4 :hover {
+        background-color: rgb(88, 194, 243);
+        /* transform: translateY(-10px); */
+
+    }
+
+
+    p {
+        text-align: justify;
+        color: rgb(255, 255, 255);
+    }
+
+    h3 {
+        text-align: center;
+        color: black;
+        font-weight: 500;
+        font-size: 20px;
+        text-transform: uppercase;
+        margin-top: 70px;
+    }
+
+
+    /* #container1 {
+            height: 300px;
+            width: 500px;
+            border: rgb(255, 4, 4);
+            background-color: black;
+
+        } */
+
+    #container {
+        /* font-family: 'Rochester', cursive; */
+        /* font-family: 'Fugaz One', cursive; */
+        color: rgb(255, 0, 0);
+        text-transform: uppercase;
+        font-size: medium;
+        /* background-color: rgb(220, 223, 228); */
+        text-align: center;
+        align-items: center;
+        /* margin: 1px 455px 58px 500px;  */
+        /* padding: 50px 50px; */
+    }
+
+    /* .button-grow {
+        color: #000000;
+        background-color: white;
+        border: 1px solid #65b5f6;
+        border-radius: 4px;
+        padding: 0 16px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .button-grow:hover {
+        transform: scale(1.1);
+    } */
+
+    .animated-border-button {
+        background-image: linear-gradient(#ec7ac1, #b334a2);
+        border: none;
+        color: #ffffff;
+        outline: none;
+        padding: 12px 40px 10px;
+        position: relative;
+    }
+
+    .animated-border-button:before,
+    .animated-border-button:after {
+        border: 0 solid transparent;
+        transition: all 0.3s;
+        content: '';
+        height: 0;
+        position: absolute;
+        width: 24px;
+    }
+
+    .animated-border-button:before {
+        border-top: 2px solid #ffffff;
+        right: 0;
+        top: -4px;
+    }
+
+    .animated-border-button:after {
+        border-bottom: 2px solid #ffffff;
+        bottom: -4px;
+        left: 0;
+    }
+
+    .animated-border-button:hover:before,
+    .animated-border-button:hover:after {
+        width: 100%;
+    }
+
+    .animated-border-button {
+        margin-left: 40%;
+        margin-bottom: 0px;
+        margin-top: 55px;
+        align-items: center;
+    }
+
+
+
+
+
+
+
+
+
+    #box1 {
+        height: 500px;
+        width: 400;
+        /* background-color: rgb(255, 255, 255); */
+        text-align: center;
+    }
+
+    .btn {
+        font-family: 'Rochester', cursive;
+
+    }
+
+    /* .navbar{
+            background: url("http://www.w3.org/2000/svg");
+        } */
+    .bottom-img {
+        width: 100%;
+
+
+
+    }
+
+    .box {
+        height: 20vh;
+        width: 30vw;
+        /* background-color: cadetblue; */
+        border: 1px solid black;
+        border-radius: 4px;
+
+
+    }
+
+    .fa-bars {
+        color: #fff;
+        font-size: 30px !important;
+
+    }
+
+    .navbar-toggler {
+        outline: none !important;
+
+    }
+
+    #banner {
+        background-color: rgb(35 209 232);
+        color: white;
+        padding-top: 5%;
+    }
+
+    .promo-title {
+        font-size: 40px;
+        font-weight: 600;
+        margin-top: 100px;
+        text-transform: uppercase;
+    }
+
+    .title {
+        color: black;
+
+
+    }
+
+    .title::before {
+        content: '';
+        background: #0ef0fc;
+        height: 7px;
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        transform: translateY(63px);
+    }
+
+    .title::after {
+        content: '';
+        background: #24e8f2;
+        height: 10px;
+        width: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+        display: block;
+        transform: translateY(8px);
+    }
+
+    #about {
+        background: #f8f9fa;
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+
+    .about-title {
+        font-size: 40px;
+        font-weight: 600;
+        margin-top: 8%;
+        color: black;
+        text-align: left;
+        /* margin-left: 10px; */
+
+    }
+
+
+    #about ul li {
+        margin: 10px 0;
+    }
+
+    #about ul {
+        margin-left: -14px;
+    }
+
+
+    .navbar-brand img {
+        height: 50px;
+        padding-left: 10px;
+
+    }
+
+    #testimonials {
+        margin: 100px 0;
+    }
+
+    .testimonials p {
+        color: black;
+    }
+
+    .user {
+        height: 200px;
+    }
+
+    .testimonials {
+        border-left: 3px solid rgb(87, 222, 226);
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+    }
+
+    .testimonials img {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        margin: 0 10px;
+    }
+
+    .user-details {
+        display: inline-block;
+        font-size: 12px;
+    }
+
+    #Social-media {
+        background: #f8f9fa;
+        padding: 100px 0;
+    }
+
+    #Social-media p {
+        font-size: 35px;
+        font-weight: 600;
+        margin-bottom: 30px;
+        color: black;
+        text-align: center;
+
+    }
+
+    .social-icons img {
+        width: 40px;
+        transition: 0.5s;
+    }
+
+    .social-icons a:hover img {
+        transform: translateY(-10px);
+    }
+
+    #footer {
+        background-image: linear-gradient(to right, #55cbfa, #19bbd8);
+        color: #fff;
+    }
+
+    .footer-img {
+        width: 100%;
+    }
+
+    .form-control {
+        font-family: 'Fugaz One', cursive;
+    }
+
+    .footer-box {
+        padding: 20px;
+    }
+
+    .footer-box img {
+        width: 120px;
+        margin-bottom: 20px;
+    }
+
+    .footer-box .fas {
+        margin-right: 8px;
+        font-size: 20px;
+        height: 40px;
+        width: 40px;
+        text-align: center;
+        padding-top: 7px;
+        border-radius: 4px;
+        background-color: #35a5f0;
+
+    }
+
+    .footer-box :hover .fas {
+        background-color: rgb(255, 0, 0);
+    }
+
+    .footer-box .far {
+        margin-right: 8px;
+        font-size: 20px;
+        height: 40px;
+        width: 40px;
+        text-align: center;
+        padding-top: 7px;
+        border-radius: 4px;
+        background-color: #35a5f0;
+
+
+    }
+
+    .footer-box :hover .far {
+        background-color: red;
+
+    }
+
+    .nav-link {
+        color: #fff;
+
+    }
+
+    hr {
+        background-color: #fff;
+    }
+
+    .copyright {
+        margin-bottom: 0;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    .accordion {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .navbar-brand {
+        font-size: 25px;
+        font-weight: 500;
+        font-family: fantasy;
+        color: palevioletred !important;
+    }
+</style>
+<!-- </head> -->
+
+<body>
+    <section id="nav-bar">
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+
+            <a class="navbar-brand" href="#">sweets shop</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <i class="fas fa-bars"></i>
+
+                <!-- <i class="fa fa-bars"></i> -->
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#faq">FAQ</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+
+            </div>
+
+
+
+        </nav>
+        <!-- <div>
+            <img src="wave (2).svg" alt="" class="bottom-img">
+        </div> -->
+    </section>
+
+    <!-- ...banner section... -->
+
+    <section id="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="promo-title">Best sweets center</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, labore? Molestiae quas consequatur
+                        repudiandae, natus atque asperiores amet iure sequi quod temporibus!
+                    </p>
+
+
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="—Pngtree—hand drawn cartoon red chef_5336755.png" class="img-fluid">
+                </div>
+
+            </div>
+        </div>
+        <button class="animated-border-button">ORDER NOW</button>
+        <img src="wave (3).svg" class="bottom-img">
+
+
+
+    </section>
+    <br>
+    <br>
+
+
+
+
+    <!-- menu -->
+
+
+    <div id="menu">
+
+        <!-- <div class="album py-5"> -->
+
+        <div class="container text-center">
+            <h2 class="title">Our Menus</h2>
+
+            <h3>cakes</h3>
+
+            <div class="row">
+                <div class="col-md-4">
+
+                    <div class="card mb-4 shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="cake1.jpg" alt="">
+
+
+                        <div class="card-body">
+                            <p class="card-text">$3</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="cofe2.jpg" alt="">
+
+                        <div class="card-body">
+                            <p class="card-text">$3</p>
+                            <div class="d-flex justify-content-between align-items-center">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="cofe4.jpg" alt="">
+
+                        <div class="card-body">
+                            <p class="card-text">$4</p>
+                            <div class="d-flex justify-content-between align-items-center">
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+
+
+    </div>
+    <div class="container">
+
+        <h3>Cookies</h3>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="b.jpg" alt="">
+
+
+                    <div class="card-body">
+                        <p class="card-text">$3</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="b1.jpg" alt="">
+
+                    <div class="card-body">
+                        <p class="card-text">$3</p>
+                        <div class="d-flex justify-content-between align-items-center">
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="b5.jpg" alt="">
+
+                    <div class="card-body">
+                        <p class="card-text">$3</p>
+                        <div class="d-flex justify-content-between align-items-center">
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+
+                <h3>Cupcakes</h3>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="c.jpg" alt="">
+
+
+                            <div class="card-body">
+
+                                <p class="card-text">$3</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="cup1.jpg"
+                                alt="">
+
+                            <div class="card-body">
+                                <p class="card-text">$3</p>
+                                <div class="d-flex justify-content-between align-items-center">
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="cup.jpg" alt="">
+
+                            <div class="card-body">
+                                <p class="card-text">$3</p>
+                                <div class="d-flex justify-content-between align-items-center">
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- About us -->
+
+    <section id="about">
+        <div class="container">
+            <h1 class="title text-center">ABOUT US</h1>
+            <div class="row">
+                <div class="col-md-6 about">
+                    <p class="about-title">Why we're different?</p>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <img src="—Pngtree—cake_5618383.png" class="img-fluid">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- testimonials -->
+
+    <section id="testimonials">
+        <div class="container">
+            <h1 class="title text-center">WHAT OUR CUSTOMERS SAY</h1>
+            <div class="row offset-1">
+                <div class="col-md-5 testimonials">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, perspiciatis. Placeat,
+                        incidunt? Accusantium facere repellendus sit ut voluptatem, cupiditate natus minus iure eligendi
+                        nisi ipsum quod, commodi non alias unde.</p>
+                    <img src="woman.png" class="user">
+                    <p class="user-details"><b>Robins farik</b><br> jhgjjkh hgkjh</p>
+
+                </div>
+                <div class="col-md-5 testimonials">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, perspiciatis. Placeat,
+                        incidunt? Accusantium facere repellendus sit ut voluptatem, cupiditate natus minus iure eligendi
+                        nisi ipsum quod, commodi non alias unde.</p>
+                    <img src="profile.png" class="user">
+                    <p class="user-details"><b>Robins farik</b><br> jhgjjkh hgkjh</p>
+
+                </div>
+
+            </div>
+            <hr>
+
+        </div>
+
+
+    </section>
+
+
+    <!-- faq section -->
+    <section id="faq">
+        <div class="container align-items-center">
+            <h2><b>FREQUENTLY ASKED QUESTIONS</b></h2>
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Do you offer gluten-free baked goods?
+                            </button>
+                        </h2>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            Some placeholder content for the first accordion panel. This panel is shown by default,
+                            thanks to the class.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, maxime!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae mollitia ducimus nam ipsum
+                            inventore, exercitationem in, necessitatibus dolore impedit corporis eveniet quaerat?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ducimus impedit, at
+                            excepturi sequi, sunt nihil non suscipit aliquam ab debitis dolor laudantium quidem eius
+                            eveniet exercitationem repellendus, quis eligendi!
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et quaerat explicabo voluptatibus
+                            illo illum sit quos dolor id molestiae. Eos?
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                aria-controls="collapseTwo">
+                                How do I order a custom decorated cake or cupcakes?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            Some placeholder content for the second accordion panel. This panel is hidden by default.
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat repudiandae consequuntur
+                            iusto.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, pariatur quos, quidem
+                            tempore adipisci illum iure unde, totam praesentium quia et!
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore fugit iure perferendis
+                            illum minima officiis fugiat porro, ducimus corrupti distinctio, dicta amet?
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, assumenda dolore.
+                            Veritatis repellendus repellat atque sed, eligendi odio ratione expedita aut ab!
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                Can you color the frosting on my cake? And/or can you match this specific color?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            And lastly, the placeholder content for the third and final accordion panel. This panel is
+                            hidden by default.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus animi consectetur
+                            nesciunt soluta cum aperiam, ipsum rerum nihil corrupti, optio alias harum, assumenda illum
+                            magnam enim mollitia voluptas recusandae possimus.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Social media section -->
+
+    <section id="Social-media">
+        <div class="container text-center">
+            <p>FIND US ON SOCIAL MEDIA</p>
+            <div class="social-icons">
+                <a href="#"><img src="facebook.png"></a>
+                <a href="#"><img src="instagram.png"></a>
+                <a href="#"><img src="whatsapp.png"></a>
+                <a href="#"><img src="twitter.png"></a>
+                <a href="#"><img src="linkedin.png"></a>
+                <a href="#"><img src="snapchat.png"></a>
+
+            </div>
+
+
+
+
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- footer section -->
+
+    <section id="footer">
+        <img src="wave (18).svg" class="footer-img">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer-box">
+                    <img src="—Pngtree—purple cake shop shopping border_5892211.png" alt="">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores atque debitis tempora placeat
+                        ad deleniti obcaecati quos et quam labore vero veniam delectus iusto incidunt eos aut, pariatur
+                        modi rem!
+                    </p>
+                </div>
+                <div class="col-md-4 footer-box">
+                    <p><b>CONTACT US</b></p>
+                    <p><i class="fas fa-map-marker"></i>best sweets shop</p>
+                    <p><i class="fas fa-phone-alt"></i>+91 9665811957</p>
+                    <p><i class="far fa-envelope"></i>xyz@gmail.com</p>
+
+
+                </div>
+                <div class="col-md-4 footer-box">
+                    <h4><b>Links</b></h4>
+
+                    <a class="nav-link" href="#menu">Menu</a>
+                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#testimonials">Testimonials</a>
+                    <a class="nav-link" href="#faq">FAQ</a>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Lorem ipsum dolor sit amet.</p>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <footer class="text-muted">
+        <div class="container">
+            <p class="float-right">
+                <a href="#">Back to top</a>
+            </p>
+            <p>Album example is © Bootstrap, but please download and customize it for yourself!</p>
+            <p>New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a
+                    href="/docs/4.6/getting-started/introduction/">getting started guide</a>.</p>
+        </div>
+    </footer> -->
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="/docs/4.6/assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
+    <script src="/docs/4.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
